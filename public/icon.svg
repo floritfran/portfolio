@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Francisco Florit">
+  <rect width="64" height="64" rx="16" fill="#0f766e"/>
+  <path d="M17 19h14v5h-8v7h7v5h-7v13h-6V19Z" fill="#ffffff"/>
+  <path d="M35 19h14v5h-8v7h7v5h-7v13h-6V19Z" fill="#ffffff" opacity=".88"/>
+</svg>

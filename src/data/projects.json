@@ -1,0 +1,186 @@
+[
+  {
+    "slug": "flixy",
+    "name": "Flixy",
+    "type": "personal",
+    "featured": true,
+    "repo": "https://github.com/Llaauuttyy/flixy",
+    "demo": null,
+    "apk": null,
+    "image": null,
+    "stack": [
+      "React",
+      "TypeScript",
+      "React Router",
+      "Vite",
+      "Tailwind CSS",
+      "Python",
+      "FastAPI",
+      "SQLModel",
+      "MySQL",
+      "TensorFlow",
+      "PyTorch Geometric",
+      "Docker"
+    ],
+    "translations": {
+      "es": {
+        "tagline": "Descubrí, calificá y compartí películas y series con recomendaciones personalizadas.",
+        "problem": "Decidir qué ver y llevar un registro social de lo que viste suele estar disperso entre apps, chats y planillas. Flixy reúne catálogo, reseñas, watchlists y actividad social, y usa tus calificaciones para recomendar títulos que todavía no viste.",
+        "features": [
+          "Registro de películas y series vistas, con calificaciones y reseñas.",
+          "Feed social con seguimiento de usuarios, likes y comentarios.",
+          "Watchlists propias y de otros usuarios, con privacidad configurable.",
+          "Recomendaciones personalizadas a partir de modelos de ML."
+        ],
+        "role": "Desarrollo full stack en equipo de 2. Trabajé en backend, frontend y en el motor de recomendación, además de watchlists, feed social, comentarios y flujos de autenticación.",
+        "challenge": "Integrar recomendaciones personalizadas sin bloquear la API: entrenamiento periódico de modelos, ejecución en segundo plano y respuesta con resultados mientras el modelo se actualiza."
+      },
+      "en": {
+        "tagline": "Discover, rate, and share movies and series with personalized recommendations.",
+        "problem": "Deciding what to watch and keeping a social record of it is usually scattered across apps, chats, and spreadsheets. Flixy brings the catalog, reviews, watchlists, and social activity together, and uses your ratings to recommend titles you haven't seen yet.",
+        "features": [
+          "Log watched movies and series with ratings and reviews.",
+          "Social feed with following, likes, and comments.",
+          "Personal and shared watchlists with configurable privacy.",
+          "Personalized recommendations powered by ML models."
+        ],
+        "role": "Full-stack development in a team of 2. I worked on the backend, frontend, and recommendation engine, as well as watchlists, the social feed, comments, and authentication flows.",
+        "challenge": "Integrating personalized recommendations without blocking the API: periodic model training, background execution, and returning results while the model updates."
+      }
+    }
+  },
+  {
+    "slug": "juntadapp",
+    "name": "JuntadApp",
+    "type": "personal",
+    "featured": true,
+    "repo": "https://github.com/floritfran/juntadapp",
+    "demo": null,
+    "apk": "https://drive.google.com/drive/folders/1DPqvbT7XfL8JSFiTTsCJ9n_8GMVHz1lJ",
+    "image": null,
+    "stack": [
+      "React Native",
+      "Expo",
+      "TypeScript",
+      "Expo Router",
+      "SQLite",
+      "Zustand",
+      "React Hook Form",
+      "Zod",
+      "Jest"
+    ],
+    "translations": {
+      "es": {
+        "tagline": "Organizá juntadas: dividí gastos y llevá el score de los juegos de mesa.",
+        "problem": "Dividir gastos y llevar puntajes durante una juntada termina en cuentas mentales y chats dispersos. JuntadApp centraliza participantes, gastos, deudas y partidas en una app mobile pensada para usarse offline.",
+        "features": [
+          "Grupos de personas, gastos compartidos y liquidación de deudas.",
+          "División equitativa y minimización de transferencias.",
+          "Módulo de juegos con Truco, Generala, Skull King y torneos de FIFA.",
+          "Persistencia local con SQLite y funcionamiento offline-first."
+        ],
+        "role": "Proyecto personal. Desarrollo completo: producto, modelo de dominio, interfaz, persistencia y tests.",
+        "challenge": "Modelar reglas de negocio de varios juegos y la liquidación de deudas en un dominio puro y testeado, con persistencia SQLite y sin depender de conexión."
+      },
+      "en": {
+        "tagline": "Organize meetups: split expenses and keep score for board and card games.",
+        "problem": "Splitting expenses and tracking scores during a meetup usually ends up in mental math and scattered chats. JuntadApp brings people, expenses, debts, and game sessions together in a mobile app designed to work offline.",
+        "features": [
+          "People groups, shared expenses, and debt settlement.",
+          "Equal splitting and transfer minimization.",
+          "Games module with Truco, Generala, Skull King, and FIFA tournaments.",
+          "Local SQLite persistence and offline-first behavior."
+        ],
+        "role": "Personal project. Full development: product, domain model, UI, persistence, and tests.",
+        "challenge": "Modeling the business rules of several games and debt settlement in a pure, well-tested domain, with SQLite persistence and no network dependency."
+      }
+    }
+  },
+  {
+    "slug": "my-football-stats",
+    "name": "MyFootStats",
+    "type": "personal",
+    "featured": false,
+    "repo": "https://github.com/floritfran/my-football-stats",
+    "demo": null,
+    "apk": null,
+    "image": null,
+    "stack": [
+      "React Native",
+      "Expo",
+      "TypeScript",
+      "SQLite",
+      "Expo Router"
+    ],
+    "translations": {
+      "es": {
+        "tagline": "Registrá tus partidos y seguí tus estadísticas como si jugaras un Mundial.",
+        "problem": "Llevar un seguimiento personal de partidos, goles y asistencias no suele ir más allá de la memoria. MyFootStats registra cada partido y transforma la temporada en estadísticas y una copa personal.",
+        "features": [
+          "Registro de partidos con resultado, goles y asistencias.",
+          "Estadísticas personales y filtros por fecha.",
+          "Tablas y etapas de torneos al estilo Mundial.",
+          "Persistencia local con SQLite."
+        ],
+        "role": "Proyecto personal. Desarrollo completo de la app mobile.",
+        "challenge": "Modelar torneos y etapas con persistencia local, manteniendo la app simple y rápida."
+      },
+      "en": {
+        "tagline": "Log your matches and track your stats as if you were playing a World Cup.",
+        "problem": "Keeping a personal record of matches, goals, and assists rarely goes beyond memory. MyFootStats logs every match and turns the season into personal stats and a private cup.",
+        "features": [
+          "Match log with results, goals, and assists.",
+          "Personal stats and date filters.",
+          "World Cup-style tournament tables and stages.",
+          "Local SQLite persistence."
+        ],
+        "role": "Personal project. Full development of the mobile app.",
+        "challenge": "Modeling tournaments and stages with local persistence while keeping the app simple and fast."
+      }
+    }
+  },
+  {
+    "slug": "tp2-algo-iii",
+    "name": "TP2 Algoritmos III",
+    "type": "academic",
+    "featured": false,
+    "repo": "https://github.com/floritfran/TP2-Algo-iii",
+    "demo": null,
+    "apk": null,
+    "image": null,
+    "stack": [
+      "Java 11",
+      "JavaFX",
+      "Maven",
+      "JUnit 5",
+      "Mockito",
+      "Jacoco"
+    ],
+    "translations": {
+      "es": {
+        "tagline": "Juego de preguntas y respuestas estilo Kahoot, como trabajo práctico de Algoritmos III.",
+        "problem": "Ejercicio académico para modelar un juego de trivia con distintos tipos de preguntas, jugadores y puntajes, aplicando diseño orientado a objetos y testing.",
+        "features": [
+          "Preguntas de verdadero/falso y multiple choice.",
+          "Opciones, respuestas y cálculo de puntajes por jugador.",
+          "Modelo de dominio extensible y pruebas automatizadas.",
+          "Aplicación JavaFX con Maven para build y ejecución."
+        ],
+        "role": "Desarrollo, diseño y testing en equipo de 5 para la materia Algoritmos y Programación III (FIUBA).",
+        "challenge": "Diseñar un modelo de dominio extensible para distintos tipos de preguntas y cubrirlo con pruebas automatizadas."
+      },
+      "en": {
+        "tagline": "A Kahoot-style quiz game built as the Algorithms III final project.",
+        "problem": "An academic exercise in modeling a trivia game with different question types, players, and scoring, applying object-oriented design and testing.",
+        "features": [
+          "True/false and multiple-choice questions.",
+          "Options, answers, and per-player score calculation.",
+          "Extensible domain model with automated tests.",
+          "JavaFX application with Maven for build and execution."
+        ],
+        "role": "Development, design, and testing in a team of 5 for the Algorithms and Programming III course (FIUBA).",
+        "challenge": "Designing an extensible domain model for different question types and covering it with automated tests."
+      }
+    }
+  }
+]

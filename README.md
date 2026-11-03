@@ -1,39 +1,112 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portfolio — Francisco Florit
 
-# Url de la página deployada
-https://my-portfolio-coral-rho-53.vercel.app/
+Portfolio personal bilingüe (ES/EN) de Francisco Florit, Full Stack Developer.
 
-## Getting Started
+- Sitio: https://floritfran.github.io/portfolio/
+- Stack: Next.js 15, React 19, TypeScript y Tailwind CSS
+- Deploy: export estático en GitHub Pages
 
-First, run the development server:
+## Desarrollo local
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abrir [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+El proyecto usa `.npmrc` con `legacy-peer-deps=true` por la combinación de versiones de Next.js, React y TypeScript.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Scripts
 
-## Learn More
+| Script | Descripción |
+| --- | --- |
+| `npm run dev` | Servidor de desarrollo con Turbopack |
+| `npm run build` | Build y export estático en `out/` |
+| `npm run preview` | Sirve el contenido de `out/` |
+| `npm run build:pages` | Valida el CV, genera los PDFs y compila para Pages |
+| `npm run lint` | ESLint |
+| `npm run typecheck` | TypeScript sin emitir archivos |
+| `npm test` | Tests con Vitest |
+| `npm run test:watch` | Tests en modo watch |
+| `npm run resume:validate` | Valida `resume.json` contra el schema Zod |
+| `npm run resume:build` | Genera los CV PDF ES/EN |
+| `npm run assets:build` | Genera foto, iconos e imagen Open Graph |
 
-To learn more about Next.js, take a look at the following resources:
+## Contenido
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- `src/data/resume.json`: experiencia, educación, skills e idiomas.
+- `src/data/resume.schema.ts`: validación y tipos del CV.
+- `src/data/projects.json`: proyectos, links y traducciones.
+- `src/data/site.ts`: datos de contacto, URL del sitio y helpers de assets.
+- `src/i18n/dictionaries/es.ts`: textos en español y tipo `Dictionary`.
+- `src/i18n/dictionaries/en.ts`: textos en inglés.
+- `src/components/`: layout, secciones, proyectos y UI.
+- `src/app/`: layout global, metadata, estilos y página principal.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+El idioma se cambia desde el header, se guarda en `localStorage` y por defecto sigue el idioma del navegador con fallback a español.
 
-## Deploy on Vercel
+## CV
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Los PDFs se generan desde `resume.json` y `scripts/resume/cv-template.ts`:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+npx playwright install chromium
+npm run resume:build
+```
+
+Salida:
+
+- `public/cv/Francisco-Florit-CV-ES.pdf`
+- `public/cv/Francisco-Florit-CV-EN.pdf`
+
+El script valida que cada CV tenga una sola página. Para cambiar el contenido, editar `resume.json` y volver a ejecutar `npm run resume:build`.
+
+## Assets
+
+```bash
+npm run assets:build
+```
+
+Genera `public/images/profile.jpg`, `public/icon.svg`, `public/apple-icon.png` y `public/og-image.png`. Requiere Playwright Chromium y `sharp`.
+
+La foto se toma por defecto de `../4x4.jpg`. Para usar otra ruta:
+
+```powershell
+$env:PHOTO_SOURCE="C:\ruta\a\foto.jpg"; npm run assets:build
+```
+
+## Tests y calidad
+
+```bash
+npm run lint
+npm run typecheck
+npm test
+```
+
+Los tests cubren contenido bilingüe, formato de fechas, tema, cambio de idioma y las secciones principales.
+
+## Deploy en GitHub Pages
+
+El workflow `.github/workflows/deploy.yml` se ejecuta en cada push a `master` y también puede lanzarse manualmente.
+
+Pasos:
+
+1. Subir el repo a GitHub.
+2. Ir a **Settings → Pages** y elegir **Source: GitHub Actions**. El workflow intenta habilitarlo automáticamente, pero puede requerir permisos del repositorio.
+3. Hacer push a `master` o ejecutar el workflow desde **Actions**.
+
+El build usa:
+
+- `NEXT_PUBLIC_BASE_PATH=/portfolio`
+- `NEXT_PUBLIC_SITE_URL=https://floritfran.github.io/portfolio/`
+
+Para probar el build de Pages localmente:
+
+```powershell
+$env:NEXT_PUBLIC_BASE_PATH="/portfolio"
+$env:NEXT_PUBLIC_SITE_URL="https://floritfran.github.io/portfolio/"
+npm run build:pages
+```
+
+El resultado queda en `out/`.

@@ -1,0 +1,339 @@
+{
+  "personal": {
+    "name": "Francisco Florit",
+    "title": {
+      "es": "Desarrollador Full Stack",
+      "en": "Full Stack Developer"
+    },
+    "location": {
+      "es": "Zona norte, Buenos Aires, Argentina",
+      "en": "Northern Buenos Aires, Argentina"
+    },
+    "email": "franciscoflorit99@gmail.com",
+    "photo": "/images/profile.jpg",
+    "links": {
+      "github": "https://github.com/floritfran",
+      "linkedin": "https://www.linkedin.com/in/francisco-florit-6311a7209/",
+      "portfolio": "https://floritfran.github.io/portfolio/"
+    }
+  },
+  "experience": [
+    {
+      "id": "darwoft",
+      "company": "Darwoft",
+      "role": {
+        "es": "Full Stack Developer",
+        "en": "Full Stack Developer"
+      },
+      "start": "2025-05",
+      "end": null,
+      "cvOnly": {
+        "client": "Claro",
+        "project": "Interfaces Prepago"
+      },
+      "description": {
+        "es": "Desarrollo y mantenimiento de servicios backend y de un portal frontend con arquitectura de microfrontends para un cliente de telecomunicaciones.",
+        "en": "Development and maintenance of backend services and a React frontend portal with a microfrontend architecture for a telecommunications client."
+      },
+      "bullets": {
+        "es": [
+          "Desarrollo y mantenimiento de servicios backend con Java y Spring Boot para un proyecto de interfaces prepago.",
+          "Desarrollo y mantenimiento de un portal frontend en React con arquitectura de microfrontends, utilizado por equipos de atención al cliente.",
+          "Participación en la migración de una solución legacy en Oracle Forms hacia React, incorporando mejoras funcionales y de experiencia de uso.",
+          "Code reviews, documentación técnica y estimación de tareas.",
+          "Seguimiento de despliegues en OpenShift, análisis de errores y resolución de incidentes en ambientes productivos y no productivos.",
+          "Desarrollo de pruebas automatizadas con JUnit, Mockito y Jest.",
+          "Uso de Claude Code y flujos spec-driven (SDD) para análisis, implementación, testing y documentación."
+        ],
+        "en": [
+          "Developed and maintained Java and Spring Boot backend services for a prepaid interfaces project.",
+          "Built and maintained a React frontend portal with a microfrontend architecture, used by customer service teams.",
+          "Contributed to migrating a legacy Oracle Forms solution to React, adding functional and UX improvements.",
+          "Performed code reviews, technical documentation, and task estimation.",
+          "Monitored OpenShift deployments, analyzed errors, and resolved incidents in production and non-production environments.",
+          "Wrote automated tests with JUnit, Mockito, and Jest.",
+          "Used Claude Code and spec-driven development (SDD) workflows for analysis, implementation, testing, and documentation."
+        ]
+      },
+      "tech": [
+        "Java",
+        "Spring Boot",
+        "React",
+        "TypeScript",
+        "Oracle",
+        "SQL",
+        "PL/SQL",
+        "OpenShift",
+        "Jenkins",
+        "JUnit",
+        "Mockito",
+        "Jest",
+        "Claude Code"
+      ]
+    },
+    {
+      "id": "odea",
+      "company": "ODEA",
+      "role": {
+        "es": "Full Stack Developer",
+        "en": "Full Stack Developer"
+      },
+      "start": "2021-09",
+      "end": "2025-05",
+      "description": {
+        "es": "Desarrollo de aplicaciones web y mobile, con foco en frontend, backend y persistencia local.",
+        "en": "Development of web and mobile applications, with a focus on frontend, backend, and local persistence."
+      },
+      "bullets": {
+        "es": [
+          "Desarrollo e implementación de aplicaciones web con Vue, incluyendo interfaz y lógica de negocio.",
+          "Creación y mantenimiento de APIs REST con Java y Spring Boot.",
+          "Desarrollo de aplicaciones mobile con React Native y Redux para la gestión de estado.",
+          "Implementación de persistencia local con Realm para información que no podía enviarse al backend por problemas de conectividad.",
+          "Integración con PostgreSQL como base de datos del servidor.",
+          "Trabajo con metodología ágil Scrum."
+        ],
+        "en": [
+          "Developed and implemented web applications with Vue, including UI and business logic.",
+          "Created and maintained REST APIs with Java and Spring Boot.",
+          "Developed mobile applications with React Native and Redux for state management.",
+          "Implemented local persistence with Realm for information that could not be sent to the backend due to connectivity issues.",
+          "Integrated applications with PostgreSQL as the server-side database.",
+          "Worked with the Agile Scrum methodology."
+        ]
+      },
+      "tech": [
+        "Vue",
+        "JavaScript",
+        "Java",
+        "Spring Boot",
+        "REST APIs",
+        "React Native",
+        "Redux",
+        "Realm",
+        "PostgreSQL",
+        "Scrum"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "id": "uba",
+      "institution": "Universidad de Buenos Aires (UBA)",
+      "start": "2018",
+      "end": "2025",
+      "degree": {
+        "es": "Licenciatura en Análisis de Sistemas",
+        "en": "Bachelor's Degree in Systems Analysis"
+      },
+      "details": {
+        "es": "Facultad de Ingeniería. Graduado.",
+        "en": "Faculty of Engineering. Graduated."
+      },
+      "location": "Buenos Aires, Argentina",
+      "showOnWebsite": true
+    },
+    {
+      "id": "fce",
+      "institution": "Cambridge English",
+      "start": null,
+      "end": null,
+      "degree": {
+        "es": "First Certificate in English (B2)",
+        "en": "First Certificate in English (B2)"
+      },
+      "details": {
+        "es": "Nivel B2. Continúo perfeccionando el idioma con clases regulares.",
+        "en": "B2 level. I continue improving my English with regular classes."
+      },
+      "showOnWebsite": true
+    },
+    {
+      "id": "secondary",
+      "institution": "Instituto San Luis",
+      "start": "2017",
+      "end": "2017",
+      "degree": {
+        "es": "Estudios secundarios",
+        "en": "Secondary Education"
+      },
+      "details": {
+        "es": "Promedio: 8,25",
+        "en": "GPA: 8.25/10"
+      },
+      "showOnWebsite": false
+    }
+  ],
+  "skills": [
+    {
+      "id": "frontend",
+      "label": {
+        "es": "Frontend",
+        "en": "Frontend"
+      },
+      "items": [
+        "React",
+        "TypeScript",
+        "JavaScript",
+        "Vue",
+        "HTML",
+        "CSS",
+        "Microfrontends"
+      ]
+    },
+    {
+      "id": "backend",
+      "label": {
+        "es": "Backend",
+        "en": "Backend"
+      },
+      "items": [
+        "Java",
+        "Spring Boot",
+        "REST APIs",
+        "Python",
+        "FastAPI"
+      ]
+    },
+    {
+      "id": "mobile",
+      "label": {
+        "es": "Mobile",
+        "en": "Mobile"
+      },
+      "items": [
+        "React Native",
+        "Expo",
+        "Redux",
+        "Realm",
+        "SQLite"
+      ]
+    },
+    {
+      "id": "databases",
+      "label": {
+        "es": "Bases de datos",
+        "en": "Databases"
+      },
+      "items": [
+        "Oracle",
+        "PostgreSQL",
+        "MySQL",
+        "SQL",
+        "PL/SQL"
+      ]
+    },
+    {
+      "id": "devops",
+      "label": {
+        "es": "DevOps e infraestructura",
+        "en": "DevOps & infrastructure"
+      },
+      "items": [
+        "OpenShift",
+        "Jenkins",
+        "Docker",
+        "GitHub Actions"
+      ]
+    },
+    {
+      "id": "testing",
+      "label": {
+        "es": "Testing",
+        "en": "Testing"
+      },
+      "items": [
+        "JUnit",
+        "Mockito",
+        "Jest",
+        "Testing Library",
+        "TDD"
+      ]
+    },
+    {
+      "id": "tools",
+      "label": {
+        "es": "Herramientas y prácticas",
+        "en": "Tools & practices"
+      },
+      "items": [
+        "Git",
+        "Maven",
+        "Claude Code",
+        "Spec-Driven Development",
+        "Code Review",
+        "Documentation",
+        "Scrum",
+        "OOP"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "name": {
+        "es": "Español",
+        "en": "Spanish"
+      },
+      "level": {
+        "es": "Nativo",
+        "en": "Native"
+      },
+      "note": {
+        "es": "Idioma nativo.",
+        "en": "Native language."
+      }
+    },
+    {
+      "name": {
+        "es": "Inglés",
+        "en": "English"
+      },
+      "level": {
+        "es": "B2",
+        "en": "B2"
+      },
+      "note": {
+        "es": "First Certificate (B2). Continúo perfeccionando el idioma con clases regulares.",
+        "en": "First Certificate (B2). I continue improving my English with regular classes."
+      }
+    }
+  ],
+  "translations": {
+    "es": {
+      "title": "Desarrollador Full Stack",
+      "summary": "Full Stack Developer con más de 5 años de experiencia construyendo productos web y mobile de punta a punta. Trabajo con Java y Spring Boot en backend, React y TypeScript en frontend, y React Native cuando el producto lo necesita. Me enfoco en APIs claras, código testeable y despliegues confiables.",
+      "about": {
+        "intro": "Soy Francisco, desarrollador Full Stack radicado en zona norte de Buenos Aires. Disfruto trabajar en productos completos: desde el modelo de datos y la API hasta la interfaz y la experiencia de uso.",
+        "paragraphs": [
+          "Mi experiencia combina backend, frontend y mobile. En Darwoft trabajo en servicios Java y Spring Boot y en un portal React con microfrontends para un cliente de telecomunicaciones; antes, en ODEA, desarrollé aplicaciones web y mobile con Vue, React Native y PostgreSQL.",
+          "Me importa la calidad del código: pruebas automatizadas, code reviews, documentación y decisiones técnicas que se puedan explicar. También incorporo IA en el flujo de trabajo con un enfoque spec-driven: primero la especificación, después la implementación y la verificación."
+        ],
+        "principles": [
+          "Especificaciones claras antes de escribir código",
+          "Testing y code reviews como parte del proceso",
+          "Documentación útil, no decorativa",
+          "IA como acelerador, no como atajo"
+        ]
+      },
+      "present": "Presente"
+    },
+    "en": {
+      "title": "Full Stack Developer",
+      "summary": "Full Stack Developer with 5+ years of experience building web and mobile products end to end. I work with Java and Spring Boot on the backend, React and TypeScript on the frontend, and React Native when the product calls for it. I focus on clear APIs, testable code, and reliable deployments.",
+      "about": {
+        "intro": "I'm Francisco, a Full Stack Developer based in northern Buenos Aires. I enjoy working on complete products: from the data model and the API to the interface and the user experience.",
+        "paragraphs": [
+          "My experience spans backend, frontend, and mobile. At Darwoft I work on Java and Spring Boot services and on a React portal with microfrontends for a telecommunications client; before that, at ODEA, I built web and mobile applications with Vue, React Native, and PostgreSQL.",
+          "I care about code quality: automated tests, code reviews, documentation, and technical decisions that can be explained. I also bring AI into my workflow with a spec-driven approach: specification first, then implementation and verification."
+        ],
+        "principles": [
+          "Clear specifications before writing code",
+          "Testing and code reviews as part of the process",
+          "Useful documentation, not decoration",
+          "AI as an accelerator, not a shortcut"
+        ]
+      },
+      "present": "Present"
+    }
+  }
+}
