@@ -68,6 +68,7 @@ export const es = {
     demo: "Ver demo",
     apk: "Descargar APK",
     soon: "Screenshot próximamente",
+    viewScreenshot: "Ver captura",
     personal: "Proyecto personal",
     academic: "Proyecto académico",
     featured: "Destacado",

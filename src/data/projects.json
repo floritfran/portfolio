@@ -7,7 +7,12 @@
     "repo": "https://github.com/Llaauuttyy/flixy",
     "demo": null,
     "apk": null,
-    "image": null,
+    "images": [
+      "/images/projects/flixy-1.webp",
+      "/images/projects/flixy-2.webp",
+      "/images/projects/flixy-3.webp",
+      "/images/projects/flixy-4.webp"
+    ],
     "stack": [
       "React",
       "TypeScript",
@@ -57,7 +62,10 @@
     "repo": "https://github.com/floritfran/juntadapp",
     "demo": null,
     "apk": "https://drive.google.com/drive/folders/1DPqvbT7XfL8JSFiTTsCJ9n_8GMVHz1lJ",
-    "image": null,
+    "images": [
+      "/images/projects/juntadapp-1.webp",
+      "/images/projects/juntadapp-2.webp"
+    ],
     "stack": [
       "React Native",
       "Expo",
@@ -104,7 +112,11 @@
     "repo": "https://github.com/floritfran/my-football-stats",
     "demo": null,
     "apk": null,
-    "image": null,
+    "images": [
+      "/images/projects/my-football-stats-1.webp",
+      "/images/projects/my-football-stats-2.webp",
+      "/images/projects/my-football-stats-3.webp"
+    ],
     "stack": [
       "React Native",
       "Expo",
@@ -147,7 +159,7 @@
     "repo": "https://github.com/floritfran/TP2-Algo-iii",
     "demo": null,
     "apk": null,
-    "image": null,
+    "images": [],
     "stack": [
       "Java 11",
       "JavaFX",

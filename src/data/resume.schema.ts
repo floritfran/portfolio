@@ -135,7 +135,7 @@ export const projectSchema = z
     repo: z.url(),
     demo: z.url().nullable(),
     apk: z.url().nullable(),
-    image: z.string().nullable(),
+    images: z.array(z.string().min(1)),
     stack: z.array(z.string().min(1)).min(1),
     translations: z
       .object({

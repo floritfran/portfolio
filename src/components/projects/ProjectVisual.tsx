@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { useState } from "react";
 
 import { asset } from "@/data/site";
 import type { Project } from "@/data/resume.schema";
@@ -26,6 +27,107 @@ function getInitials(name: string) {
     .join("")
     .slice(0, 2)
     .toUpperCase();
+}
+
+function BrowserGallery({
+  project,
+  className,
+}: {
+  project: Project;
+  className?: string;
+}) {
+  const { locale, t } = useI18n();
+  const [active, setActive] = useState(0);
+  const content = project.translations[locale];
+  const images = project.images;
+
+  return (
+    <div className={cn("flex flex-col gap-3", className)}>
+      <div className="overflow-hidden rounded-2xl border border-border bg-background shadow-card">
+        <div className="flex items-center gap-1.5 border-b border-border bg-surface px-3 py-2">
+          <span className="h-2 w-2 rounded-full bg-rose-400/80" />
+          <span className="h-2 w-2 rounded-full bg-amber-400/80" />
+          <span className="h-2 w-2 rounded-full bg-emerald-400/80" />
+          <span className="ml-2 flex-1 truncate rounded-full border border-border bg-background px-2 py-0.5 font-mono text-[0.55rem] text-muted">
+            flixy.app
+          </span>
+        </div>
+        <div className="relative aspect-[16/9]">
+          <Image
+            src={asset(images[active])}
+            alt={`${project.name} — ${content.tagline}`}
+            fill
+            sizes="(min-width: 1024px) 560px, 90vw"
+            className="object-cover"
+          />
+        </div>
+      </div>
+      {images.length > 1 ? (
+        <div className="grid grid-cols-4 gap-2">
+          {images.map((image, index) => (
+            <button
+              key={image}
+              type="button"
+              aria-label={`${t.projects.viewScreenshot} ${index + 1}`}
+              aria-current={index === active ? "true" : undefined}
+              onClick={() => setActive(index)}
+              className={cn(
+                "relative aspect-[16/9] overflow-hidden rounded-lg border bg-surface transition",
+                index === active
+                  ? "border-accent ring-2 ring-accent/30"
+                  : "border-border opacity-70 hover:opacity-100",
+              )}
+            >
+              <Image
+                src={asset(image)}
+                alt=""
+                fill
+                sizes="140px"
+                className="object-cover"
+              />
+            </button>
+          ))}
+        </div>
+      ) : null}
+    </div>
+  );
+}
+
+function PhoneGallery({
+  project,
+  className,
+}: {
+  project: Project;
+  className?: string;
+}) {
+  const { locale } = useI18n();
+  const content = project.translations[locale];
+
+  return (
+    <div
+      className={cn(
+        "flex flex-wrap items-center justify-center gap-3",
+        className,
+      )}
+    >
+      {project.images.map((image, index) => (
+        <div
+          key={image}
+          className="relative w-full min-w-[88px] max-w-[140px] flex-1 basis-0 overflow-hidden rounded-[1.6rem] border-[4px] border-foreground/15 bg-background shadow-card"
+        >
+          <div className="relative aspect-[9/20]">
+            <Image
+              src={asset(image)}
+              alt={`${project.name} — ${content.tagline} (${index + 1})`}
+              fill
+              sizes="(min-width: 1024px) 160px, 30vw"
+              className="object-cover"
+            />
+          </div>
+        </div>
+      ))}
+    </div>
+  );
 }
 
 function BrowserPlaceholder({
@@ -140,27 +242,15 @@ export function ProjectVisual({
   className?: string;
 }) {
   const { t } = useI18n();
-
-  if (project.image) {
-    return (
-      <div
-        className={cn(
-          "relative aspect-[16/10] overflow-hidden rounded-2xl border border-border bg-surface",
-          className,
-        )}
-      >
-        <Image
-          src={asset(project.image)}
-          alt={`${project.name} — ${project.translations.es.tagline}`}
-          fill
-          sizes="(min-width: 1024px) 540px, 90vw"
-          className="object-cover"
-        />
-      </div>
-    );
-  }
-
   const kind = getKind(project);
+
+  if (project.images.length > 0) {
+    if (kind === "browser") {
+      return <BrowserGallery project={project} className={className} />;
+    }
+
+    return <PhoneGallery project={project} className={className} />;
+  }
 
   return (
     <div

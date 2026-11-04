@@ -70,6 +70,7 @@ export const en: Dictionary = {
     demo: "View demo",
     apk: "Download APK",
     soon: "Screenshot coming soon",
+    viewScreenshot: "View screenshot",
     personal: "Personal project",
     academic: "Academic project",
     featured: "Featured",

@@ -13,6 +13,7 @@
     "resume:validate": "tsx scripts/resume/validate.ts",
     "resume:build": "tsx scripts/resume/build.ts",
     "assets:build": "tsx scripts/assets/build.ts",
+    "assets:projects": "tsx scripts/assets/projects.ts",
     "build:pages": "npm run resume:validate && npm run resume:build && next build"
   },
   "dependencies": {
